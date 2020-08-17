@@ -5,7 +5,7 @@ function watchForm(){
     $('form').submit(event=>{
         event.preventDefault();
         console.log($('.maxDogs').val())
-        if($('.maxDogs').val() == undefined)
+        if($('.maxDogs').val() == undefined && $('.maxDogs').val() < 50)
             input = 3;
         else    
             input = $('.maxDogs').val();
